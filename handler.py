@@ -7,11 +7,11 @@ from rossmann.Rossmann import Rossmann
 
 #loading molde
 model = pickle.load(open('model/model_rossmann.pkl', 'rb'))
-
+		
 #inicialização app
 app = Flask(__name__)
 
-@app.route('/rossmann/predict', methods=['POST'])
+@app.route('/rossmann', methods=['POST'])
 
 def rossmann_predict():
     test_json = request.get_json()
