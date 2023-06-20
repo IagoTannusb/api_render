@@ -12,7 +12,7 @@ class Rossmann (object):
         self.rs_competition_time_month = pickle.load(open('parameter/competition_time_month_scaler.pkl', 'rb'))
         self.minmax_year = pickle.load(open('parameter/year_scaler.pkl', 'rb'))
         self.minmax_promo_time_week = pickle.load(open('parameter/promo_time_week_scaler.pkl', 'rb')) 
-        self.le_store_type = pickle.load(open('parameter/store_type_encoding.pkl', 'rb'))
+        self.le_store_type = pickle.load(open('parameter/store_type_scaler.pkl', 'rb'))
 
     def data_cleaning (self, df1):
 
